@@ -8,5 +8,5 @@
 - <a href="https://icons.getbootstrap.com/">Bootstrap Icons </a> ( Icon Gratisan )
 - <a href="https://react-chartjs-2.js.org/">react-chartjs-2 </a> ( data chart )
 
-lihat <a href="#">preview</a>
+lihat <a href="https://sosmed-chartjs.vercel.app/">preview</a>
 ### @ahmad rizal
