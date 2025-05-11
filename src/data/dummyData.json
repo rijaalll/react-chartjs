@@ -1,0 +1,89 @@
+{
+    "year": ["2020", "2021", "2022", "2023", "2024"],
+    "data_src": [
+      "https://tekno.kompas.com/read/2024/10/25/15020057/indonesia-pengguna-tiktok-terbesar-di-dunia-tembus-157-juta-kalahkan-as",
+      "https://goodstats.id/article/indonesia-masuk-jajaran-pengguna-youtube-terbanyak-di-dunia-2025-7Cvdz",
+      "https://napoleoncat.com/stats/facebook-users-in-indonesia/2024/04/",
+      "https://napoleoncat.com/stats/instagram-users-in-indonesia/2024/04/",
+      "https://databoks.katadata.co.id/teknologi-telekomunikasi/statistik/75dd4b36866dc54/ada-27-juta-pengguna-twitter-di-indonesia-terbanyak-ke-4-global",
+      "https://goodstats.id/article/indonesia-masuk-3-besar-negara-pengguna-whatsapp-terbanyak-di-dunia-dIG13"
+    ],
+    "tiktok": {
+      "title": "TikTok",
+      "alias": "Kandang Monyet",
+      "download": {
+        "2020": 22200000,
+        "2021": 92200000,
+        "2022": 99070000,
+        "2023": 112970000,
+        "2024": 157600000
+      }
+    },
+    "youtube": {
+      "title": "YouTube",
+      "alias": "g ngerti",
+      "download": {
+        "2020": 107000000,
+        "2021": 139000000,
+        "2022": 139000000,
+        "2023": 139000000,
+        "2024": 143000000
+      }
+    },
+    "facebook": {
+      "title": "Pesnuk",
+      "alias": "Sarang Boomer, gorengan, jomok, and meme",
+      "download": {
+        "2020": 158160000,
+        "2021": 171800000,
+        "2022": 135050000,
+        "2023": 198300000,
+        "2024": 174300000
+      }
+    },
+    "X": {
+      "title": "X / Twitter",
+      "alias": "Sarang Drama, chudai",
+      "download": {
+        "2020": 27000000,
+        "2021": 27000000,
+        "2022": 27000000,
+        "2023": 27500000,
+        "2024": 27500000
+      }
+    },
+    "instagram": {
+      "title": "Instagram",
+      "alias": "Feed kereN ekonomi gapake N",
+      "download": {
+        "2020": 70000000,
+        "2021": 80000000,
+        "2022": 85000000,
+        "2023": 104800000,
+        "2024": 90507900
+      }
+    },
+    "whatsapp": {
+      "title": "WhatsApp",
+      "alias": "Ijo michat",
+      "download": {
+        "2020": 68800000,
+        "2021": 84800000,
+        "2022": 112000000,
+        "2023": 112000000,
+        "2024": 112000000
+      }
+    },
+    "quora": {
+      "title": "Quora",
+      "alias": "Si penambah IQ",
+      "download": {
+        "2020": 500000,
+        "2021": 1200000,
+        "2022": 880000,
+        "2023": 10200,
+        "2024": 157000
+      }
+    }
+  }
+  

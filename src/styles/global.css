@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+div,
+button {
+    @apply transition-all duration-300 ease-in-out;
+}

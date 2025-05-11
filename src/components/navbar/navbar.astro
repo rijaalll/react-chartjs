@@ -1,0 +1,17 @@
+---
+import navbarData from "../../data/navbarData.json";
+import MobileNav from "./mobileNav.tsx";
+const navbar = navbarData;
+const currentPath = Astro.url.pathname;
+---
+
+<div class="w-full h-auto flex items-center sm:justify-center py-3 bg-slate-200/40 backdrop-blur-xs px-5">
+    <div class="w-auto h-auto flex-row gap-5 hidden sm:flex">
+        {navbar.map((item) => (
+            <a href={item.path} class={`${currentPath === item.path ? 'text-blue-500' : 'text-black'} text-lg capitalize`}>{item.name}</a>
+        ))}
+    </div>
+    <div class="w-full h-auto sm:hidden">
+        <MobileNav client:load currentPath={currentPath} />
+    </div>
+</div>

@@ -1,0 +1,40 @@
+---
+import { ClientRouter } from 'astro:transitions';
+import Navbar from '../components/navbar/navbar.astro';
+
+const { title, metaType, metaTitle } = Astro.props;
+import './src/styles/global.css';
+import './src/styles/custom.css';
+import 'bootstrap-icons/font/bootstrap-icons.css';
+---
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content={metaTitle} />
+    <meta property="og:type" content={metaType} />
+    <meta property="og:image" content="../../public/this-logo.webp" />
+    <meta property="og:url" content={Astro.url} />
+    <meta property="og:site_name" content="sosmed charts" />
+    <link rel="shortcut icon" href="../../public/this-logo.webp" type="image/x-icon">
+    <title>{title}</title>
+    <ClientRouter />
+</head>
+<body class="w-full h-[100dvh] bg-slate-200">
+    <div class="w-full h-auto fixed z-[10] top-0 left-0">
+        <Navbar />
+    </div>
+    <div transition:animate="fade" >
+        <slot />
+    </div>
+    <div class="w-full h-auto relative bottom-[3rem] left-0 flex justify-center flex-row gap-3">
+        <a href="https://github.com/rijaalll/react-chartjs" target="_blank">
+            <span class="bi bi-github"></span>
+            <span>rijaalll</span>
+        </a>
+        <p>dibuat dengan <span class="bi bi-astro text-red-500"><a href="https://astro.build/">astro js</a></span></p>
+    </div>
+</body>
+</html>
