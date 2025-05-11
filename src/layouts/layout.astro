@@ -1,6 +1,7 @@
 ---
 import { ClientRouter } from 'astro:transitions';
 import Navbar from '../components/navbar/navbar.astro';
+import { webImage } from '../assets/this-logo.webp';
 
 const { title, metaType, metaTitle } = Astro.props;
 import '../styles/global.css';
@@ -15,10 +16,10 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content={metaTitle} />
     <meta property="og:type" content={metaType} />
-    <meta property="og:image" content="../assets/this-logo.webp" />
+    <meta property="og:image" content={webImage} />
     <meta property="og:url" content={Astro.url} />
     <meta property="og:site_name" content="sosmed charts" />
-    <link rel="shortcut icon" href="../assets/this-logo.webp" type="image/x-icon">
+    <link rel="shortcut icon" href={webImage} type="image/x-icon">
     <title>{title}</title>
     <ClientRouter />
 </head>
