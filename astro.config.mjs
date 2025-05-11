@@ -1,21 +1,13 @@
-// @ts-check
 import { defineConfig } from 'astro/config';
 import react from '@astrojs/react';
 import tailwindcss from '@tailwindcss/vite';
+import vercel from '@astrojs/vercel/serverless'; // Menggunakan Vercel Adapter
 
-import node from '@astrojs/node';
-
-// https://astro.build/config
 export default defineConfig({
   integrations: [react()],
-
   vite: {
-    plugins: [tailwindcss()]
+    plugins: [tailwindcss()],
   },
-
   output: "server",
-
-  adapter: node({
-    mode: 'standalone',
-  }),
+  adapter: vercel(), // Gunakan adapter untuk Vercel
 });
